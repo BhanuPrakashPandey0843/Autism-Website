@@ -1,8 +1,8 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import whatsappicon from "../../assets/whatsapp-line.svg"
-import facebookicon from "../../assets/facebook-line.svg"
-import linkedinicon from "../../assets/linkedin-line.svg"
+import React from 'react';
+import { motion } from 'framer-motion';
+import whatsappicon from "../../assets/whatsapp-line.svg";
+import facebookicon from "../../assets/facebook-line.svg";
+import linkedinicon from "../../assets/linkedin-line.svg";
 
 const Uppernav = () => {
   const containerStyle = {
@@ -12,9 +12,9 @@ const Uppernav = () => {
     fontFamily: "sans-serif",
     padding: "8px 0",
     overflow: "hidden",
-    position: "relative", // ensures it stacks above others
-    zIndex: 1000,          // keep it above most other elements
-  }
+    position: "relative",
+    zIndex: 1000,
+  };
 
   const contentStyle = {
     display: "flex",
@@ -22,41 +22,41 @@ const Uppernav = () => {
     gap: "2.5rem",
     whiteSpace: "nowrap",
     justifyContent: "center",
-    flexWrap: "wrap", // allow wrapping on small screens
+    flexWrap: "wrap",
     padding: "0 1rem"
-  }
+  };
 
   const textStyle = {
     fontSize: "14px",
     display: "flex",
     gap: "0.5rem",
     alignItems: "center"
-  }
+  };
 
   const dividerStyle = {
     width: "1px",
     height: "16px",
     backgroundColor: "white",
     opacity: 0.4
-  }
+  };
 
   const iconStyle = {
     width: "20px",
     height: "20px",
     transition: "transform 0.2s",
     cursor: "pointer"
-  }
+  };
 
   const contactStyle = {
     fontSize: "14px",
     display: "flex",
     gap: "0.5rem",
     alignItems: "center"
-  }
+  };
 
   const spanStyle = {
     fontWeight: "500"
-  }
+  };
 
   return (
     <motion.div
@@ -75,9 +75,15 @@ const Uppernav = () => {
         </p>
         <span style={dividerStyle}></span>
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-          <img src={whatsappicon} alt="WhatsApp" style={iconStyle} />
-          <img src={facebookicon} alt="Facebook" style={iconStyle} />
-          <img src={linkedinicon} alt="LinkedIn" style={iconStyle} />
+          <a href="https://wa.me/917061738562" target="_blank" rel="noopener noreferrer">
+            <img src={whatsappicon} alt="WhatsApp" style={iconStyle} />
+          </a>
+          <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <img src={facebookicon} alt="Facebook" style={iconStyle} />
+          </a>
+          <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinicon} alt="LinkedIn" style={iconStyle} />
+          </a>
         </div>
         <span style={dividerStyle}></span>
         <p style={contactStyle}>
@@ -85,7 +91,7 @@ const Uppernav = () => {
         </p>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default Uppernav
+export default Uppernav;
