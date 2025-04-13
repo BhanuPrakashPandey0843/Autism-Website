@@ -5,6 +5,7 @@ import Footer from './Component/Footer/Footer';
 import Uppernav from './Component/Uppernav/Uppernav';
 import LandingPage from './Pages/LandingPage';
 
+
 const App = () => {
   return (
     <Router>
@@ -16,6 +17,7 @@ const App = () => {
             <Route path="/" element={<LandingPage />} />
           </Routes>
         </main>
+
         <Footer />
       </>
     </Router>
