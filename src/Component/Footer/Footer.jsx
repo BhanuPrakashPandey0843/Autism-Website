@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaSkype } from "react-icons/fa";
-import { LuArrowUpRight } from "react-icons/lu";
-import {Link} from "react-router-dom"
+import arrowIcon from "../../assets/arrow-right-up-line.svg";
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -21,8 +21,10 @@ const Footer = () => {
               <button className="border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
                 Contact Us
               </button>
-              <button className="flex bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-2 rounded-full text-white font-semibold transition hover:scale-105 duration-200">
-                Make an Inquiry <LuArrowUpRight className='pt-2 text-2xl text-black font-bold'/>
+              <button className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                Make an Enquiry <div className="w-6 h-6 flex items-center justify-center bg-white rounded-full">
+                  <img src={arrowIcon} alt="Arrow Icon" className="w-3.5 h-3.5" />
+                </div>
               </button>
             </div>
           </div>
@@ -44,7 +46,7 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-            
+
             {/* Quick Links */}
             <div>
               <h4 className="font-semibold mb-4">Quick Link</h4>
