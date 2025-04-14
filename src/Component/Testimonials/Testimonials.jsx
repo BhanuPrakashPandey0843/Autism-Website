@@ -33,6 +33,12 @@ const testimonials = [
     img: "https://randomuser.me/api/portraits/men/75.jpg",
   },
   {
+    name: "Bhanu Pandey",
+    location: "New York",
+    text: "From the initial consultation to therapy sessions, the experience has been seamless. Our family finally feels supported and informed throughout this journey.",
+    img: "/images/BhanuPhoto.jpg",
+  },
+  {
     name: "Anshika Singh",
     location: "America",
     text: "We’ve tried multiple centers, but this one stood out. Their commitment to autism care, education, and parent guidance is unmatched.",
