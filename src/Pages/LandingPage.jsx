@@ -3,6 +3,7 @@ import Landinghero from '../Component/Landinghero/Landinghero'
 import BookingForm from '../Component/BookingForm/BookingForm';
 import Testimonials from '../Component/Testimonials/Testimonials'; 
 import Faq from '../Component/Faq/Faq';
+import Ourprice from "../Component/Ourprice/Ourprice"
 import Description from '../Component/Description/Description';
 import Details from "../Component/Details/Details";
 import AutismHero from '../Component/AutismHero/AutismHero';
@@ -22,6 +23,9 @@ const LandingPage = () => {
      </section>
      <section>
         <Description />
+      </section>
+      <section>
+        <Ourprice />
       </section>
       <section>
         <BookingForm />
