@@ -37,12 +37,12 @@ const Faq = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-white py-20 px-4 sm:px-6 lg:px-12">
+    <div className="bg-gradient-to-b from-blue-50 to-white py-14 px-4 sm:px-6 lg:px-12">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-4">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center text-gray-600 text-base sm:text-lg mb-10">
           Explore our FAQs to find quick solutions and information about our autism support services, appointments, and more.
         </p>
 
@@ -50,23 +50,23 @@ const Faq = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-full sm:rounded-xl shadow-sm p-4 sm:p-6 transition-all duration-300"
+              className="bg-white rounded-2xl shadow-md p-4 sm:p-6 transition-all duration-300"
             >
               <button
                 onClick={() => toggle(index)}
                 className="flex justify-between items-center w-full text-left"
               >
-                <span className="text-gray-800 font-medium text-lg">
+                <span className="text-gray-800 font-medium text-base sm:text-lg">
                   {faq.question}
                 </span>
                 {openIndex === index ? (
-                  <FiChevronUp className="h-5 w-5 text-gray-500" />
+                  <FiChevronUp className="h-6 w-6 text-gray-500" />
                 ) : (
-                  <FiChevronDown className="h-5 w-5 text-gray-500" />
+                  <FiChevronDown className="h-6 w-6 text-gray-500" />
                 )}
               </button>
               {openIndex === index && (
-                <div className="mt-4 text-gray-600 text-sm sm:text-base border-l border-gray-300 pl-4">
+                <div className="mt-4 text-gray-600 text-sm sm:text-base border-l-4 border-blue-200 pl-4">
                   {faq.answer}
                 </div>
               )}
