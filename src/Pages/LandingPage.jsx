@@ -5,10 +5,12 @@ import Testimonials from '../Component/Testimonials/Testimonials';
 import Faq from '../Component/Faq/Faq';
 import Description from '../Component/Description/Description';
 import Details from "../Component/Details/Details";
+import AutismHero from '../Component/AutismHero/AutismHero';
 
 const LandingPage = () => {
   return (
     <main className="space-y-8 px-4 md:px-8 py-6">
+     
       <section>
         <Landinghero />
       </section>
