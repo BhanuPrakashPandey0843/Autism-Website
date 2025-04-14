@@ -6,7 +6,7 @@ const Navbar = () => {
     "Home",
     "About Us",
     "Services",
-    "Doctors",
+  
     "Programs",
     "Contact Us",
   ];

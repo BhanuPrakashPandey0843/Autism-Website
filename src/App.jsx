@@ -4,6 +4,7 @@ import Navbar from './Component/Navbar/Navbar';
 import Footer from './Component/Footer/Footer';
 import Uppernav from './Component/Uppernav/Uppernav';
 import LandingPage from './Pages/LandingPage';
+import ContacPage from './Pages/ContactUs'
 import Lapland from "./Pages/Lapland";
 import Paris from "./Pages/Paris";
 import NewYork from "./Pages/NewYork";
@@ -20,6 +21,7 @@ const App = () => {
         <main>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/contact" element={<ContacPage />} />
             <Route path="/lapland" element={<Lapland />} />
             <Route path="/paris" element={<Paris />} />
             <Route path="/newyork" element={<NewYork />} />
