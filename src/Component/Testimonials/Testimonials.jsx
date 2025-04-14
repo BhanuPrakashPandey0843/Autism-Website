@@ -41,11 +41,12 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-  const controls = useAnimation();
+  const controlsRow1 = useAnimation();
+  const controlsRow2 = useAnimation();
 
-  const startAnimation = () => {
+  const startAnimation = (controls, direction = "left") => {
     controls.start({
-      x: ["0%", "-50%"],
+      x: direction === "left" ? ["0%", "-50%"] : ["-50%", "0%"],
       transition: {
         x: {
           repeat: Infinity,
@@ -58,7 +59,8 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    startAnimation();
+    startAnimation(controlsRow1, "left");
+    startAnimation(controlsRow2, "right");
   }, []);
 
   return (
@@ -70,15 +72,16 @@ const Testimonials = () => {
         </p>
       </div>
 
+      {/* Row 1 */}
       <div
-        className="overflow-hidden"
-        onMouseEnter={() => controls.stop()}
-        onMouseLeave={startAnimation}
+        className="overflow-hidden mb-8"
+        onMouseEnter={() => controlsRow1.stop()}
+        onMouseLeave={() => startAnimation(controlsRow1, "left")}
       >
-        <motion.div className="flex space-x-6 w-max" animate={controls}>
+        <motion.div className="flex space-x-6 w-max" animate={controlsRow1}>
           {testimonials.concat(testimonials).map((t, index) => (
             <div
-              key={index}
+              key={`row1-${index}`}
               className="bg-blue-50 rounded-xl p-6 w-80 shadow-md flex-shrink-0"
             >
               <p className="text-gray-700 mb-4">"{t.text}"</p>
@@ -95,6 +98,39 @@ const Testimonials = () => {
               </div>
             </div>
           ))}
+        </motion.div>
+      </div>
+
+      {/* Row 2 */}
+      <div
+        className="overflow-hidden"
+        onMouseEnter={() => controlsRow2.stop()}
+        onMouseLeave={() => startAnimation(controlsRow2, "right")}
+      >
+        <motion.div className="flex space-x-6 w-max" animate={controlsRow2}>
+          {testimonials
+            .slice()
+            .reverse()
+            .concat(testimonials.slice().reverse())
+            .map((t, index) => (
+              <div
+                key={`row2-${index}`}
+                className="bg-blue-50 rounded-xl p-6 w-80 shadow-md flex-shrink-0"
+              >
+                <p className="text-gray-700 mb-4">"{t.text}"</p>
+                <div className="flex items-center mt-4">
+                  <img
+                    src={t.img}
+                    alt={t.name}
+                    className="w-12 h-12 rounded-full mr-4 object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold text-gray-800">{t.name}</p>
+                    <p className="text-sm text-gray-500">Location: {t.location}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
         </motion.div>
       </div>
     </div>
