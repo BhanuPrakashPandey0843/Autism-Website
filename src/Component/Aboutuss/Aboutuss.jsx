@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBullhorn, FaBrain, FaPuzzlePiece, FaSchool, FaUsers, FaStar } from "react-icons/fa";
-
+import { Link } from 'react-router-dom';
+import arrowIcon from "../../assets/arrow-right-up-line.svg";
 {/* Features  */ }
 const features = [
   {
@@ -99,9 +100,17 @@ const Aboutuss = () => {
               At Growveil Thrive Hub, we focus on developing intuitive tools, educational resources, and interactive platforms that cater to the unique needs of autistic individuals. Our team of empathetic developers, educators, and health professionals work together to create environments that promote inclusivity, independence, and confidence.
             </p>
 
-            <button className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow-md hover:bg-blue-700 transition duration-300">
-              Get in touch
-            </button>
+            <div className="flex justify-center">
+          <Link
+            to="/contact"
+            className="flex items-center gap-3 bg-gradient-to-r from-[#928AFD] to-[#6A60E6] text-white text-sm md:text-base font-semibold px-6 py-3 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            Contact - us
+            <div className="w-6 h-6 flex items-center justify-center bg-white rounded-full">
+              <img src={arrowIcon} alt="Arrow Icon" className="w-3.5 h-3.5" />
+            </div>
+          </Link>
+        </div>
           </div>
         </div>
       </section>
