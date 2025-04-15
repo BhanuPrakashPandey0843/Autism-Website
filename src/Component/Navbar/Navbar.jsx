@@ -48,7 +48,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:flex">
             <Link
-              to="/book"
+              to="/book-appointment"
               className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl"
             >
               Book Appointment
@@ -96,7 +96,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link
-              to="/book"
+              to="/book-appointment"
               onClick={() => setMobileOpen(false)}
               className="mt-4 flex items-center gap-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white font-semibold px-5 py-3 rounded-full shadow-md transition-all hover:scale-105"
             >

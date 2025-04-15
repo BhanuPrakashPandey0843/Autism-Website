@@ -5,6 +5,7 @@ import Footer from './Component/Footer/Footer';
 import Uppernav from './Component/Uppernav/Uppernav';
 import LandingPage from './Pages/LandingPage';
 import ContactPage from './Pages/ContactUs';
+import  Aboutus from './Pages/Aboutus';
 import Lapland from "./Pages/Lapland";
 import Paris from "./Pages/Paris";
 import NewYork from "./Pages/NewYork";
@@ -24,12 +25,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/contact" element={<ContactPage />} />
+       
+            
             <Route path="/lapland" element={<Lapland />} />
             <Route path="/paris" element={<Paris />} />
             <Route path="/newyork" element={<NewYork />} />
             <Route path="/tokyo" element={<Tokyo />} />
             <Route path="/bali" element={<Bali />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<Aboutus />} />
             <Route path="/services" element={<Services />} />
             <Route path="/programs" element={<Programs />} />
           </Routes>
