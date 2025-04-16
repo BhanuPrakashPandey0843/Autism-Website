@@ -158,9 +158,9 @@ const Aboutuss = () => {
               interacts socially. Here's a general process that highlights
               awareness, support, and growth for individuals with autism.
             </p>
-            <button className="px-5 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300">
+            <Link to="/contact" className="px-5 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-500 hover:text-white transition-all duration-300">
               Get in Touch
-            </button>
+            </Link>
 
             <div className="mt-8 relative overflow-hidden rounded-2xl shadow-lg group">
               <img
