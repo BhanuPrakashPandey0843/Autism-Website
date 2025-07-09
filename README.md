@@ -123,7 +123,7 @@ Loan-Analytics-Project/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Loan-Analytics-Project.git
+  [ git clone https://github.com/your-username/Loan-Analytics-Project.git](https://github.com/Jasika-Kumari/Loan-Analytics-Project-Risk-Approval-Insights.git)
    cd Loan-Analytics-Project
 
 
