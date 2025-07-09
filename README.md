@@ -125,7 +125,7 @@ Loan-Analytics-Project/
    ```bash
    git clone https://github.com/your-username/Loan-Analytics-Project.git
    cd Loan-Analytics-Project
-````
+
 
 2. Install required packages:
 
@@ -163,3 +163,4 @@ A ready-to-use presentation file summarizing the key metrics, visuals, and takea
 This project brings together the strengths of Python, SQL, and Power BI to perform a full-cycle data analysis — from raw data to polished visual reports. The process equips business analysts and decision-makers with the information they need to evaluate loan applications effectively, reduce risk exposure, and improve customer targeting.
 
 
+---
